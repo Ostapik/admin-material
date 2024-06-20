@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+$primary: #a3ceef;
+$success: #22c55e;
+$warning: #f97316;
+$danger: #ef4444;
+
+@use "bulma/sass" with (
+  $primary: $primary,
+  $success: $success,
+  $warning: $warning,
+  $danger: $danger
+);
+
+.virtual-scroll {
+  height: 200px;
+}
+
+table td, table th {
+  vertical-align: middle;
+}
